@@ -2,33 +2,39 @@ Algoritmo "exercicioquadrante"
 
 
 Var
-   x, y : real
-   quadrante : caractere
 
+   x, y : inteiro
 
 Inicio
-   Escreva ("Valor de X: " )
+
+   Escreval (" Digite os valores das coordenadas X e Y: ")
    leia (x)
-   escreva ("Valor de y: ")
    leia (y)
    
-   se (x = 0) e ( y = 0) entao
-      quadrante <- "Origem"
-   senão
-      Se (x > 0) e (y > 0) entao
-          quadrante <- "Q1"
-      senão
-          se (x < 0) e (y > 0) entao
-             quadrante <- "Q2"
+   enquanto (x <> 0) e (Y <> 0) faca
+
+       Se (x > 0) e (y > 0) entao
+          escreval ( "QUADRANTE Q1")
+       senao
+
+          se (x < 0) e (Y > 0) então
+             escreval ( "QUADRANTE Q2")
           senao
-             se (x < 0) e (y < 0) entao
-                quadrante <- "Q3"
+
+             se (x < 0) e (Y < 0) entao
+                escreval ( "QUADRANTE Q3")
              senao
-                quadrante <- "Q4"
+                escreval ( "QUADRANTE Q4")
+
              fimse
+
           fimse
-      fimse
-   fimse
+
+       fimse
+       
+       leia (x)
+       leia (y)
+
+   fimenquanto
    
-   Escreva ( quadrante )
 Fimalgoritmo
